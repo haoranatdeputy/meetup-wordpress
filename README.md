@@ -74,4 +74,18 @@ Install a plugin:
 
 
 
+# Corcel
+
+
+    $ composer require jgrossi/corcel
+    $ php artisan vendor:publish --provider="Corcel\Laravel\CorcelServiceProvider"
+
+Follow [README.md](https://github.com/corcel/corcel)
+
+* Update config/database.php and add 'wordpress' connection.
+* Update config/corcel.php and change connection to 'wordpress'.
+
+    $ php artisan tinker
+
+
 

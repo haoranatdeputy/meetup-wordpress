@@ -1,6 +1,12 @@
 # This is Scotchbox.
 
 Vagrant.configure("2") do |config|
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 10240
+    v.cpus = 2
+  end
+
   config.vm.box = "scotch/box"
   config.vm.network "private_network", ip: "11.11.11.11"
   config.vm.hostname = "scotchbox"
